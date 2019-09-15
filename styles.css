@@ -1,0 +1,59 @@
+
+ /* General advice: in order to understand better position of elements, 
+ add to CSS rule of each element {border: 1px solid black} */
+ 
+ 
+ /* Asterix means that the rule will be applied to all elements on the page */
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  color: white;
+  font-size: 30px;
+  font-weight: 100;
+  font-style: italic;
+  letter-spacing: 14px;
+}
+
+.menu {
+  background-color: #c42199;
+  border: 1px solid blue;
+  padding: 10px;
+  margin: 20px;
+}
+
+h4.first-title {
+  color: blue;
+}
+
+.first-title.yellow {
+  color: yellow;
+}
+
+.all-pizzas {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.pizza {
+  margin: 10px;
+}
+
+.pizza img:hover {
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+@media (min-height: 800px) AND (min-width: 640px) {
+  .all-pizzas {
+    flex-direction: row;
+  }
+}
+
+@media (max-height: 800px) AND (max-width: 640px) {
+  .all-pizzas {
+    flex-direction: column;
+  }
+}
